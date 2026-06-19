@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Classificador de Filmes</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Classificador de Filmes</h1>
+ 
+        <label for="txtTitulo">Título do Filme:</label>
+        <input type="text" id="txtTitulo" placeholder="Ex: Divertida Mente">
+ 
+        <label for="txtAno">Ano de Lançamento:</label>
+        <input type="number" id="txtAno" placeholder="Ex: 2015">
+ 
+        <label for="txtDuracao">Duração (minutos):</label>
+        <input type="number" id="txtDuracao" placeholder="Ex: 95">
+ 
+        <label for="selFaixa">Faixa Etária:</label>
+        <select id="selFaixa">
+            <option value="L">L — Livre</option>
+            <option value="10">10 — A partir de 10 anos</option>
+            <option value="12">12 — A partir de 12 anos</option>
+            <option value="14">14 — A partir de 14 anos</option>
+            <option value="16">16 — A partir de 16 anos</option>
+            <option value="18">18 — A partir de 18 anos</option>
+        </select>
+ 
+        <button onclick="processarFilme()">Classificar Filme</button>
+ 
+        <h3>Resultado:</h3>
+        <div id="txtResultado" class="output-area">Aguardando dados ...</div>
+    </div>
+ 
+    <script src="app.js"></script>
+</body>
+</html>
